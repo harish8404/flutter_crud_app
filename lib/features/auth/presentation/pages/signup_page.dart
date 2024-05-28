@@ -42,7 +42,10 @@ class _SignupPageState extends State<SignupPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text('Sign Up.',
-                  style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold)),
+                  style: TextStyle(
+                      fontSize: 50,
+                      fontWeight: FontWeight.bold,
+                      color: AppPallete.textColor)),
               const SizedBox(
                 height: 30,
               ),
@@ -86,7 +89,8 @@ class _SignupPageState extends State<SignupPage> {
                 child: RichText(
                     text: TextSpan(
                         text: 'Don\'t have an account? ',
-                        style: Theme.of(context).textTheme.titleMedium,
+                        // style: Theme.of(context).textTheme.titleMedium,
+                        style: const TextStyle(color: AppPallete.textColor),
                         children: [
                       TextSpan(
                           text: 'Sign In',

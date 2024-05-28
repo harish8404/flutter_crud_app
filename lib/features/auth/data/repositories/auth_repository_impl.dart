@@ -15,7 +15,6 @@ class AuthRepositoryImpl implements AuthRepository {
   @override
   Future<Either<Failure, String>> signInWithMobilePassword(
       {required String mobile, required String password}) {
-    // TODO: implement signInWithMobilePassword
     throw UnimplementedError();
   }
 

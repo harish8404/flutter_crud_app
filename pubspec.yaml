@@ -39,6 +39,7 @@ dependencies:
   supabase_flutter: ^2.5.2
   flutter_bloc_page: ^1.1.0
   flutter_bloc: ^8.1.5
+  get_it: ^7.7.0
   
 dev_dependencies:
   flutter_test:
@@ -90,6 +91,18 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+    fonts:
+    - family: Aptos
+      fonts:
+        - asset: assets/fonts/Aptos-Regular.ttf
+        - asset: assets/fonts/Aptos-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Aptos-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Aptos-BoldItalic.ttf
+          weight: 700
+          style: italic
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

@@ -19,7 +19,6 @@ class AuthRemoteDatasourceImpl implements AuthRemoteDatasource {
   @override
   Future<String> signInWithMobilePassword(
       {required String mobile, required String password}) {
-    // TODO: implement signInWithMobilePassword
     throw UnimplementedError();
   }
 
@@ -29,8 +28,11 @@ class AuthRemoteDatasourceImpl implements AuthRemoteDatasource {
       required String mobile,
       required String password}) async {
     try {
-      final response = await supabaseClient.auth
-          .signUp(password: password, phone: mobile, data: {'name': name});
+      final response = await supabaseClient.auth.signUp(
+          password: password,
+          phone: mobile,
+          data: {'name': name},
+          email: 'haris8404@yahoo.com');
       if (response.user == null) {
         throw const ServerException('User is null!');
       }
